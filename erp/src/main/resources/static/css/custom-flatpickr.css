@@ -1,0 +1,160 @@
+/* Make input fully rounded */
+.input-group .form-control {
+    border-radius: 50px;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Change focus effect */
+.input-group .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0px 0px 8px rgba(13, 110, 253, 0.5);
+}
+
+/* Calendar Container */
+.flatpickr-calendar {
+    border: none;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Month & Year Selector */
+.flatpickr-months {
+    background: #0d6efd;
+    color: white;
+    border-radius: 12px 12px 0 0;
+}
+
+.flatpickr-current-month {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+/* Weekdays */
+.flatpickr-weekdays {
+    background: #f8f9fa;
+    padding: 10px 0;
+    font-weight: 500;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+/* Day Cells */
+.flatpickr-day {
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    color: #333;
+}
+
+.flatpickr-day:hover {
+    background: #0d6efd !important;
+    color: white !important;
+}
+
+/* Selected Day */
+.flatpickr-day.selected {
+    background: #0d6efd !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Today Highlight */
+.flatpickr-day.today {
+    border: 2px solid #0d6efd;
+    font-weight: bold;
+}
+
+/* Arrows */
+.flatpickr-months .flatpickr-prev-month,
+.flatpickr-months .flatpickr-next-month {
+    width: 36px; /* Ensures equal width */
+    height: 36px; /* Ensures equal height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Makes arrows round */
+    transition: background 0.3s ease-in-out;
+}
+
+/* Arrow icons */
+.flatpickr-prev-month svg,
+.flatpickr-next-month svg {
+    width: 20px; /* Adjusts icon size */
+    height: 20px;
+    stroke: white; /* Makes arrow white */
+}
+
+/* Hover effect */
+.flatpickr-months .flatpickr-prev-month:hover,
+.flatpickr-months .flatpickr-next-month:hover {
+    background: rgba(255, 255, 255, 0.2); /* Adds a soft hover effect */
+}
+
+.flatpickr-day.flatpickr-disabled,
+.flatpickr-day.prevMonthDay,
+.flatpickr-day.nextMonthDay {
+    color: #bbb !important; /* Light gray for clarity */
+    opacity: 0.6;
+}
+
+.flatpickr-day.flatpickr-disabled:hover,
+.flatpickr-day.prevMonthDay:hover,
+.flatpickr-day.nextMonthDay:hover {
+    background: transparent !important;
+    cursor: pointer !important;
+}
+
+/* Dark Mode Support */
+[data-bs-theme="dark"] .form-control {
+    background-color: #222 !important;
+    color: white !important;
+    border: 1px solid #444 !important;
+}
+
+[data-bs-theme="dark"] .flatpickr-calendar {
+    background: #2c2f33;
+    color: white;
+    border: 1px solid #444;
+}
+
+[data-bs-theme="dark"] .flatpickr-months {
+    background: #0d6efd;
+    color: white;
+}
+
+[data-bs-theme="dark"] .flatpickr-weekdays {
+    background: #3a3d40;
+    color: #ddd;
+}
+
+[data-bs-theme="dark"] .flatpickr-weekday {
+    color: white !important; /* Ensures weekdays (Mon, Tue, etc.) are white */
+}
+
+[data-bs-theme="dark"] .flatpickr-day {
+    color: white;
+}
+
+[data-bs-theme="dark"] .flatpickr-day:hover {
+    background: #0d6efd !important;
+}
+
+[data-bs-theme="dark"] .flatpickr-prev-month svg,
+[data-bs-theme="dark"] .flatpickr-next-month svg {
+    stroke: white !important;
+}
+
+[data-bs-theme="dark"] .flatpickr-months .flatpickr-prev-month:hover,
+[data-bs-theme="dark"] .flatpickr-months .flatpickr-next-month:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+[data-bs-theme="dark"] .flatpickr-day.flatpickr-disabled,
+[data-bs-theme="dark"] .flatpickr-day.prevMonthDay,
+[data-bs-theme="dark"] .flatpickr-day.nextMonthDay {
+    color: #666 !important;
+    opacity: 0.5;
+}
